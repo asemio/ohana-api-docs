@@ -7,7 +7,7 @@ Ohanakapa.post("organizations/1/locations",
 ```
 
 ```shell
-curl -X POST "https://ohana-api-demo.herokuapp.com/api/organizations/1/locations" -d '{"name":"New Location","description":"New description"}' -H "X-Api-Token: your_token" -H "Content-Type: application/json"
+curl -X POST "https://ohana-api-211.herokuapp.com/api/organizations/1/locations" -d '{"name":"New Location","description":"New description"}' -H "X-Api-Token: your_token" -H "Content-Type: application/json"
 ```
 
 > When successful, the above command returns a `201` HTTP status code and JSON
@@ -25,7 +25,7 @@ This endpoint creates a new location for the specified organization.
 
 ### HTTP Request
 
-`POST https://ohana-api-demo.herokuapp.com/api/organizations/:organization_id/locations`
+`POST https://ohana-api-211.herokuapp.com/api/organizations/:organization_id/locations`
 
 ### JSON Parameters
 
@@ -33,7 +33,7 @@ This endpoint creates a new location for the specified organization.
 --------- | ----------- | ---- | ---------
 | accessibility | array of strings | optional | Accessibility options available at the location. Accepted values are `cd`, `deaf_interpreter`, `disabled_parking`, `elevator`, `ramp`, `restroom`, `tape_braille`, `tty`, `wheelchair`, and `wheelchair_van`. |
 | address_attributes | object | required unless the location is marked as virtual | Physical address of location. See the [Address](#address) section for the columns in that table. |
-| admin_emails | array of strings | optional | Email address for a person allowed to administer the location (via the Ohana API Admin interface for example). |
+| admin_emails | array of strings | optional | Email address for a person allowed to administer the location (via the 211 OK API Admin interface for example). |
 | alternate_name | String | optional | Another name this location might be known by. |
 | latitude | float | optional | Latitude portion of the location's coordinates. Note that the app automatically geocodes addresses if the data doesn't include coordinates |
 | longitude | float | optional | Longitude portion of the location's coordinates. Note that the app automatically geocodes addresses if the data doesn't include coordinates |

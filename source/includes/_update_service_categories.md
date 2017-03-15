@@ -10,7 +10,7 @@ Ohanakapa.put('services/1/categories', { taxonomy_ids: ['101', '102'] })
 # Update categories for the service with id 1 by passing in an array of
 # taxonomy_ids.
 
-curl -X PUT "https://ohana-api-demo.herokuapp.com/api/services/1/categories" -d '{"taxonomy_ids": ["101", "102"]}' -H "X-Api-Token: your_token" -H "Content-Type: application/json"
+curl -X PUT "https://ohana-api-211.herokuapp.com/api/services/1/categories" -d '{"taxonomy_ids": ["101", "102"]}' -H "X-Api-Token: your_token" -H "Content-Type: application/json"
 ```
 
 > When successful, the above command returns the updated service with a `200` HTTP status code:
@@ -59,7 +59,7 @@ This endpoint updates a service with the specified categories.
 
 ### HTTP Request
 
-`PUT https://ohana-api-demo.herokuapp.com/api/services/:service_id/categories`
+`PUT https://ohana-api-211.herokuapp.com/api/services/:service_id/categories`
 
 ### JSON Parameters
 

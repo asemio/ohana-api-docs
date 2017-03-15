@@ -3,7 +3,7 @@
 ```ruby
 # Provide an API Endpoint
 Ohanakapa.configure do |c|
-  c.api_endpoint = 'https://ohana-api-demo.herokuapp.com/api'
+  c.api_endpoint = 'https://ohana-api-211.herokuapp.com/api'
 end
 
 # Fetch all children of the category with a specific `taxonomy_id`.
@@ -13,7 +13,7 @@ Ohanakapa.get('categories/:category_taxonomy_id/children')
 ```shell
 # Fetch all children of the category with a specific `taxonomy_id`.
 
-curl "https://ohana-api-demo.herokuapp.com/api/categories/101/children" -H "User-Agent: MyClient/1.0.0"
+curl "https://ohana-api-211.herokuapp.com/api/categories/101/children" -H "User-Agent: MyClient/1.0.0"
 ```
 
 > The above command returns JSON structured like this:
@@ -76,4 +76,4 @@ This endpoint retrieves all children categories of a specific category.
 
 ### HTTP Request
 
-`GET https://ohana-api-demo.herokuapp.com/api/categories/:category_taxonomy_id/children`
+`GET https://ohana-api-211.herokuapp.com/api/categories/:category_taxonomy_id/children`

@@ -6,7 +6,7 @@ Ohanakapa.post('locations/1/services', { name: 'Free Eye Exam', audience: 'Low-i
 ```
 
 ```shell
-curl -X POST "https://ohana-api-demo.herokuapp.com/api/locations/1/services" -d '{"audience":"Low-income children","description":"Provides free eye exams for low-income children between the ages of 5 and 12","name":"Free Eye Exam"}' -H "X-Api-Token: your_token" -H "Content-Type: application/json"
+curl -X POST "https://ohana-api-211.herokuapp.com/api/locations/1/services" -d '{"audience":"Low-income children","description":"Provides free eye exams for low-income children between the ages of 5 and 12","name":"Free Eye Exam"}' -H "X-Api-Token: your_token" -H "Content-Type: application/json"
 ```
 
 > When successful, the above command returns a `201` HTTP status code and JSON
@@ -63,7 +63,7 @@ This endpoint creates a new service for a location.
 
 ### HTTP Request
 
-`POST https://ohana-api-demo.herokuapp.com/api/locations/:location_id/services`
+`POST https://ohana-api-211.herokuapp.com/api/locations/:location_id/services`
 
 ### JSON Parameters
 

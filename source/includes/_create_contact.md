@@ -6,7 +6,7 @@ Ohanakapa.post('locations/1/contacts/', { department: 'Referrals', name: 'Moncef
 ```
 
 ```shell
-curl -X POST "https://ohana-api-demo.herokuapp.com/api/locations/1/contacts" -d '{"department":"Referrals","name":"Moncef"}' -H "X-Api-Token: your_token" -H "Content-Type: application/json"
+curl -X POST "https://ohana-api-211.herokuapp.com/api/locations/1/contacts" -d '{"department":"Referrals","name":"Moncef"}' -H "X-Api-Token: your_token" -H "Content-Type: application/json"
 ```
 
 > When successful, the above command returns a `201` HTTP status code and JSON
@@ -27,7 +27,7 @@ This endpoint creates a new contact for the specified entity.
 
 ### HTTP Request
 
-`POST https://ohana-api-demo.herokuapp.com/api/locations/:location_id/contacts`
+`POST https://ohana-api-211.herokuapp.com/api/locations/:location_id/contacts`
 
 ### JSON Parameters
 

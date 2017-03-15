@@ -26,7 +26,7 @@ Access-Control-Allow-Credentials: true
 
 ```shell
 # A valid CORS preflight request can also include the `Allow-Control-Request-Headers` header:
-$ curl -i https://ohana-api-demo.herokuapp.com/api/locations -H "Origin: http://example.com" -H "Access-Control-Request-Method: GET" -H "Access-Control-Request-Headers: If-None-Match" -X OPTIONS
+$ curl -i https://ohana-api-211.herokuapp.com/api/locations -H "Origin: http://example.com" -H "Access-Control-Request-Method: GET" -H "Access-Control-Request-Headers: If-None-Match" -X OPTIONS
 
 HTTP/1.1 200 OK
 Access-Control-Allow-Origin: http://example.com
@@ -58,5 +58,6 @@ The following additional headers are exposed:
 
 
 View sample requests and responses on the right in the Shell tab.
-
+<!--
 View the [source code](https://github.com/codeforamerica/ohana-api/blob/master/config/application.rb#L43-52).
+-->

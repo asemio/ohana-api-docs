@@ -6,7 +6,7 @@ Ohanakapa.update_location(1, { name: 'Updated Name' })
 ```
 
 ```shell
-curl -X PATCH "https://ohana-api-demo.herokuapp.com/api/locations/1" -d '{"name":"Updated name"}' -H "X-Api-Token: test" -H "Content-Type: application/json"
+curl -X PATCH "https://ohana-api-211.herokuapp.com/api/locations/1" -d '{"name":"Updated name"}' -H "X-Api-Token: test" -H "Content-Type: application/json"
 ```
 
 > When successful, the above command returns a `200` HTTP status code and JSON
@@ -34,7 +34,7 @@ curl -X PATCH "https://ohana-api-demo.herokuapp.com/api/locations/1" -d '{"name"
   "transportation": null,
   "website": "http://www.redwoodcity.org/library",
   "updated_at": "2014-09-09T07:54:08.641-07:00",
-  "url": "https://ohana-api-demo.herokuapp.com/api/locations/redwood-shores-branch",
+  "url": "https://ohana-api-211.herokuapp.com/api/locations/redwood-shores-branch",
   "address": {
     "id": 14,
     "address_1": "399 Marine Parkway",
@@ -174,7 +174,7 @@ curl -X PATCH "https://ohana-api-demo.herokuapp.com/api/locations/1" -d '{"name"
     "alternate_name": null,
     "name": "Admin Test Org",
     "slug": "admin-test-org",
-    "url": "https://ohana-api-demo.herokuapp.com/api/organizations/admin-test-org",
+    "url": "https://ohana-api-211.herokuapp.com/api/organizations/admin-test-org",
   }
 }
 ```
@@ -183,7 +183,7 @@ This endpoint updates an existing location.
 
 ### HTTP Request
 
-`PATCH https://ohana-api-demo.herokuapp.com/api/locations/1`
+`PATCH https://ohana-api-211.herokuapp.com/api/locations/1`
 
 ### JSON Parameters
 

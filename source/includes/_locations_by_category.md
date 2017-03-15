@@ -1,6 +1,4 @@
-# Organization Locations
-
-## Get all locations belonging to an organization
+## Get all locations for a given service category
 
 ```ruby
 # Provide an API Endpoint
@@ -8,12 +6,12 @@ Ohanakapa.configure do |c|
   c.api_endpoint = 'https://ohana-api-211.herokuapp.com/api'
 end
 
-# Fetch all locations belonging to the organization with id 1
-Ohanakapa.get('organizations/1/locations')
+# Fetch all locations for a given category
+Ohanakapa.locations({:categoryid => '101'})
 ```
 
 ```shell
-curl "https://ohana-api-211.herokuapp.com/api/organizations/1/locations" -H "User-Agent: MyClient/1.0.0"
+curl "https://ohana-api-211.herokuapp.com/api/locations?categoryid=101" -H "User-Agent: MyClient/1.0.0"
 ```
 
 > The above command returns JSON structured like this:
@@ -22,7 +20,6 @@ curl "https://ohana-api-211.herokuapp.com/api/organizations/1/locations" -H "Use
 [
   {
     "id": 31,
-    "active": true,
     "admin_emails": [ ],
     "coordinates": [
       -122.4456187,
@@ -34,8 +31,8 @@ curl "https://ohana-api-211.herokuapp.com/api/organizations/1/locations" -H "Use
     "name": "New location test",
     "short_desc": null,
     "slug": "new-location-test",
-    "website": null,
     "updated_at": "2014-09-10T08:21:14.853-07:00",
+    "website": null,
     "contacts_url": "https://ohana-api-211.herokuapp.com/api/locations/new-location-test/contacts",
     "services_url": "https://ohana-api-211.herokuapp.com/api/locations/new-location-test/services",
     "url": "https://ohana-api-211.herokuapp.com/api/locations/new-location-test",
@@ -62,11 +59,11 @@ curl "https://ohana-api-211.herokuapp.com/api/organizations/1/locations" -H "Use
       "url": "https://ohana-api-211.herokuapp.com/api/organizations/admin-test-org",
       "locations_url": "https://ohana-api-211.herokuapp.com/api/organizations/admin-test-org/locations"
     },
-    "phones": [ ]
+    "phones": [ ],
+    "is_priority": false
   },
   {
     "id": 30,
-    "active": true,
     "admin_emails": [ ],
     "coordinates": [
       -122.4136494,
@@ -78,9 +75,10 @@ curl "https://ohana-api-211.herokuapp.com/api/organizations/1/locations" -H "Use
     "name": "Location with no service",
     "short_desc": null,
     "slug": "location-with-no-service",
-    "website": null,
     "updated_at": "2014-09-10T08:21:14.848-07:00",
+    "website": null,
     "contacts_url": "https://ohana-api-211.herokuapp.com/api/locations/location-with-no-service/contacts",
+    "faxes_url": "https://ohana-api-211.herokuapp.com/api/locations/location-with-no-service/faxes",
     "services_url": "https://ohana-api-211.herokuapp.com/api/locations/location-with-no-service/services",
     "url": "https://ohana-api-211.herokuapp.com/api/locations/location-with-no-service",
     "address": {
@@ -106,16 +104,17 @@ curl "https://ohana-api-211.herokuapp.com/api/organizations/1/locations" -H "Use
       "url": "https://ohana-api-211.herokuapp.com/api/organizations/admin-test-org",
       "locations_url": "https://ohana-api-211.herokuapp.com/api/organizations/admin-test-org/locations"
     },
-    "phones": [ ]
+    "phones": [ ],
+    "is_priority": true
   }
 ]
 ```
 
-This endpoint retrieves all locations that belong to a particular organization.
+This endpoint retrieves all locations which provide a service in the chosen category.
 
 ### HTTP Request
 
-`GET https://ohana-api-211.herokuapp.com/api/organizations/:id/locations`
+`GET https://ohana-api-211.herokuapp.com/api/locations?category_id=101`
 
 ### URL Query Parameters
 
@@ -123,4 +122,3 @@ Parameter | Default | Description
 --------- | ------- | -----------
 page | 1 | The particular page of results.
 per_page | 30 | Amount of locations to return per page, up to 100.
-

@@ -5,7 +5,7 @@ Requests that return multiple items will be paginated to 30 items by default. Yo
 Note that page numbering is 1-based and that omitting the `?page` parameter will return the first page.
 
 ```shell
-curl 'http://api.smc-connect.org/locations?page=2&per_page=10'
+curl 'http://ohana-api-211.herokuapp.com/locations?page=2&per_page=10'
 ```
 
 ```ruby
@@ -19,7 +19,7 @@ The pagination info is included in the Link header. It is important to follow th
 > A Link Header appears in the HTTP Response like this:
 
 ```
-Link: <http://api.smc-connect.org/locations?page=57>; rel="last", <http://api.smc-connect.org/locations?page=2>; rel="next"
+Link: <http://ohana-api-211.herokuapp.com/locations?page=57>; rel="last", <http://ohana-api-211.herokuapp.com/locations?page=2>; rel="next"
 ```
 
 The possible `rel` values are:

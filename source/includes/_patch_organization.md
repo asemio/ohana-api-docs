@@ -6,7 +6,7 @@ Ohanakapa.patch('organizations/1', query: { name: 'Updated Name' })
 ```
 
 ```shell
-curl -X PATCH "https://ohana-api-demo.herokuapp.com/api/organizations/1/address/1" -d '{"name":"Updated Name"}' -H "X-Api-Token: test" -H "Content-Type: application/json"
+curl -X PATCH "https://ohana-api-211.herokuapp.com/api/organizations/1/address/1" -d '{"name":"Updated Name"}' -H "X-Api-Token: test" -H "Content-Type: application/json"
 ```
 
 > When successful, the above command returns a `200` HTTP status code and JSON
@@ -25,8 +25,8 @@ curl -X PATCH "https://ohana-api-demo.herokuapp.com/api/organizations/1/address/
   "name": "Updated Name",
   "slug": "updated-name",
   "website": null,
-  "url": "https://ohana-api-demo.herokuapp.com/api/organizations/admin-test-org",
-  "locations_url": "https://ohana-api-demo.herokuapp.com/api/organizations/admin-test-org/locations",
+  "url": "https://ohana-api-211.herokuapp.com/api/organizations/admin-test-org",
+  "locations_url": "https://ohana-api-211.herokuapp.com/api/organizations/admin-test-org/locations",
   "contacts": [],
   "phones": []
 }
@@ -36,7 +36,7 @@ This endpoint updates an existing organization.
 
 ### HTTP Request
 
-`PATCH https://ohana-api-demo.herokuapp.com/api/organizations/1`
+`PATCH https://ohana-api-211.herokuapp.com/api/organizations/1`
 
 ### JSON Parameters
 

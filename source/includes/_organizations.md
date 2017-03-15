@@ -5,7 +5,7 @@
 ```ruby
 # Provide an API Endpoint
 Ohanakapa.configure do |c|
-  c.api_endpoint = 'https://ohana-api-demo.herokuapp.com/api'
+  c.api_endpoint = 'https://ohana-api-211.herokuapp.com/api'
 end
 
 # Fetch all organizations
@@ -13,7 +13,7 @@ Ohanakapa.organizations
 ```
 
 ```shell
-curl "https://ohana-api-demo.herokuapp.com/api/organizations" -H "User-Agent: MyClient/1.0.0"
+curl "https://ohana-api-211.herokuapp.com/api/organizations" -H "User-Agent: MyClient/1.0.0"
 ```
 
 > The above command returns JSON structured like this:
@@ -32,8 +32,8 @@ curl "https://ohana-api-demo.herokuapp.com/api/organizations" -H "User-Agent: My
     "name": "Admin Test Org",
     "slug": "admin-test-org",
     "website": null,
-    "url": "http://ohana-api-demo.herokuapp.com/api/organizations/admin-test-org",
-    "locations_url": "http://ohana-api-demo.herokuapp.com/api/organizations/admin-test-org/locations",
+    "url": "http://ohana-api-211.herokuapp.com/api/organizations/admin-test-org",
+    "locations_url": "http://ohana-api-211.herokuapp.com/api/organizations/admin-test-org/locations",
     "contacts": [],
     "phones": []
   },
@@ -49,8 +49,8 @@ curl "https://ohana-api-demo.herokuapp.com/api/organizations" -H "User-Agent: My
     "name": "Fake Org",
     "slug": "fake-org",
     "website": null,
-    "url": "http://ohana-api-demo.herokuapp.com/api/organizations/fake-org",
-    "locations_url": "http://ohana-api-demo.herokuapp.com/api/organizations/fake-org/locations",
+    "url": "http://ohana-api-211.herokuapp.com/api/organizations/fake-org",
+    "locations_url": "http://ohana-api-211.herokuapp.com/api/organizations/fake-org/locations",
     "contacts": [],
     "phones": []
   }
@@ -61,12 +61,7 @@ This endpoint retrieves all organizations.
 
 ### HTTP Request
 
-`GET https://ohana-api-demo.herokuapp.com/api/organizations`
-
-Note that the URL above is just an example for the demo instance.
-To access an API that serves a particular region, you would need to look up
-the appropriate endpoint. All known API deployments are listed in the
-[deployments](#live-deployments-of-ohana-api) section at the top of this page.
+`GET https://ohana-api-211.herokuapp.com/api/organizations`
 
 ### URL Query Parameters
 

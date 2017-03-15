@@ -10,10 +10,10 @@ Ohanakapa.location('redwood-shores-branch')
 
 ```shell
 # Find a location by slug
-curl "https://ohana-api-demo.herokuapp.com/api/locations/redwood-shores-branch"
+curl "https://ohana-api-211.herokuapp.com/api/locations/redwood-shores-branch"
 
 # Find a location by id
-curl "https://ohana-api-demo.herokuapp.com/api/locations/1"
+curl "https://ohana-api-211.herokuapp.com/api/locations/1"
 ```
 
 > When successful, the above command returns a `200` HTTP status code and JSON
@@ -41,7 +41,8 @@ curl "https://ohana-api-demo.herokuapp.com/api/locations/1"
   "transportation": null,
   "website": "http://www.redwoodcity.org/library",
   "updated_at": "2014-09-09T07:54:08.641-07:00",
-  "url": "https://ohana-api-demo.herokuapp.com/api/locations/redwood-shores-branch",
+  "url": "https://ohana-api-211.herokuapp.com/api/locations/redwood-shores-branch",
+  "free_text_hours": "Open M-F 9AM to 4PM, except on Federal Holidays",
   "address": {
     "id": 14,
     "address_1": "399 Marine Parkway",
@@ -197,7 +198,7 @@ curl "https://ohana-api-demo.herokuapp.com/api/locations/1"
     "alternate_name": null,
     "name": "Redwood City Public Library",
     "slug": "redwood-city-public-library",
-    "url": "https://ohana-api-demo.herokuapp.com/api/organizations/redwood-city-public-library",
+    "url": "https://ohana-api-211.herokuapp.com/api/organizations/redwood-city-public-library",
   }
 }
 ```
@@ -206,11 +207,11 @@ This endpoint retrieves a specific location.
 
 ### HTTP Request
 
-`GET https://ohana-api-demo.herokuapp.com/api/locations/1`
+`GET https://ohana-api-211.herokuapp.com/api/locations/1`
 
 or
 
-`GET https://ohana-api-demo.herokuapp.com/api/locations/redwood-shores-branch`
+`GET https://ohana-api-211.herokuapp.com/api/locations/redwood-shores-branch`
 
 ### Note about location status
 For clients that display information about a particular Location, it

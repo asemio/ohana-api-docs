@@ -10,10 +10,10 @@ Ohanakapa.organization('peninsula-family-service')
 
 ```shell
 # Find an organization by slug
-curl "https://ohana-api-demo.herokuapp.com/api/organizations/peninsula-family-service"
+curl "https://ohana-api-211.herokuapp.com/api/organizations/peninsula-family-service"
 
 # Find an organization by id
-curl "https://ohana-api-demo.herokuapp.com/api/organizations/1"
+curl "https://ohana-api-211.herokuapp.com/api/organizations/1"
 ```
 
 > When successful, the above command returns a `200` HTTP status code and JSON
@@ -32,8 +32,8 @@ curl "https://ohana-api-demo.herokuapp.com/api/organizations/1"
   "name": "Peninsula Family Service",
   "slug": "peninsula-family-service",
   "website": null,
-  "url": "http://ohana-api-demo.herokuapp.com/api/organizations/peninsula-family-service",
-  "locations_url": "http://ohana-api-demo.herokuapp.com/api/organizations/peninsula-family-service/locations",
+  "url": "http://ohana-api-211.herokuapp.com/api/organizations/peninsula-family-service",
+  "locations_url": "http://ohana-api-211.herokuapp.com/api/organizations/peninsula-family-service/locations",
   "contacts":[
     {
       "department":"Operations",
@@ -78,11 +78,11 @@ This endpoint retrieves a specific organization.
 
 ### HTTP Request
 
-`GET https://ohana-api-demo.herokuapp.com/api/organizations/peninsula-family-service`
+`GET https://ohana-api-211.herokuapp.com/api/organizations/peninsula-family-service`
 
 or
 
-`GET https://ohana-api-demo.herokuapp.com/api/organizations/1`
+`GET https://ohana-api-211.herokuapp.com/api/organizations/1`
 
 ### URL Parameters
 

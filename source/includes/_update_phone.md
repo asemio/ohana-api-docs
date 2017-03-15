@@ -8,7 +8,7 @@ Ohanakapa.patch('locations/1/phones/1', { number: '123-456-7890', extension: '12
 ```
 
 ```shell
-curl -X PATCH "https://ohana-api-demo.herokuapp.com/api/locations/1/phones" -d '{"number": "123-456-7890", "extension": "1200", "department": "Referrals", "number_type": "voice", "country_prefix": "+1"}' -H "X-Api-Token: your_token" -H "Content-Type: application/json"
+curl -X PATCH "https://ohana-api-211.herokuapp.com/api/locations/1/phones" -d '{"number": "123-456-7890", "extension": "1200", "department": "Referrals", "number_type": "voice", "country_prefix": "+1"}' -H "X-Api-Token: your_token" -H "Content-Type: application/json"
 ```
 
 > When successful, the above command returns a `201` HTTP status code and JSON
@@ -30,10 +30,10 @@ This endpoint updates an existing phone for the specified entity.
 ### HTTP Request
 
 For locations:
-`PATCH https://ohana-api-demo.herokuapp.com/api/locations/:location_id/phones/:phone_id`
+`PATCH https://ohana-api-211.herokuapp.com/api/locations/:location_id/phones/:phone_id`
 
 For contacts:
-`PATCH https://ohana-api-demo.herokuapp.com/api/locations/:location_id/contacts/:contact_id/phones/:phone_id`
+`PATCH https://ohana-api-211.herokuapp.com/api/locations/:location_id/contacts/:contact_id/phones/:phone_id`
 
 ### JSON Parameters
 

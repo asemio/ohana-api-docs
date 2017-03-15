@@ -1,6 +1,6 @@
 # Errors
 
-The Ohana API uses the following error codes:
+The 211 OK API uses the following error codes:
 
 Error Code | Meaning
 ---------- | -------

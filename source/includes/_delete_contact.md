@@ -6,7 +6,7 @@ Ohanakapa.delete('/locations/1/contacts/1')
 ```
 
 ```shell
-curl --request DELETE "https://ohana-api-demo.herokuapp.com/api/locations/1/contacts/1" -H "X-Api-Token: your_secret_token"
+curl --request DELETE "https://ohana-api-211.herokuapp.com/api/locations/1/contacts/1" -H "X-Api-Token: your_secret_token"
 ```
 
 > When successful, the above command returns a `204` HTTP status code with an empty body.
@@ -15,7 +15,7 @@ This endpoint deletes an existing contact for the specified entity.
 
 ### HTTP Request
 
-`DELETE https://ohana-api-demo.herokuapp.com/api/locations/:location_id/contacts/:contact_id`
+`DELETE https://ohana-api-211.herokuapp.com/api/locations/:location_id/contacts/:contact_id`
 
 <aside class="warning">All DELETE requests require a valid token passed via the
 `X-Api-Token` HTTP header</aside>

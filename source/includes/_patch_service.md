@@ -6,7 +6,7 @@ Ohanakapa.patch('locations/22/services/22', { name: 'Updated Service' })
 ```
 
 ```shell
-curl -X PATCH "https://ohana-api-demo.herokuapp.com/api/locations/22/services/22" -d '{"name":"Updated Service"}' -H "X-Api-Token: test" -H "Content-Type: application/json"
+curl -X PATCH "https://ohana-api-211.herokuapp.com/api/locations/22/services/22" -d '{"name":"Updated Service"}' -H "X-Api-Token: test" -H "Content-Type: application/json"
 ```
 
 > When successful, the above command returns a `200` HTTP status code and JSON
@@ -65,7 +65,7 @@ This endpoint updates an existing service for the specified location.
 
 ### HTTP Request
 
-`PATCH https://ohana-api-demo.herokuapp.com/api/locations/:location_id/services/:service_id`
+`PATCH https://ohana-api-211.herokuapp.com/api/locations/:location_id/services/:service_id`
 
 ### JSON Parameters
 

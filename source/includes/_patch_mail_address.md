@@ -6,7 +6,7 @@ Ohanakapa.patch('locations/1/mail_address/1', { street: 'Updated Street' })
 ```
 
 ```shell
-curl -X PATCH "https://ohana-api-demo.herokuapp.com/api/locations/1/mail_address/1" -d '{"address_1":"Updated Street"}' -H "X-Api-Token: test" -H "Content-Type: application/json"
+curl -X PATCH "https://ohana-api-211.herokuapp.com/api/locations/1/mail_address/1" -d '{"address_1":"Updated Street"}' -H "X-Api-Token: test" -H "Content-Type: application/json"
 ```
 
 > When successful, the above command returns a `200` HTTP status code and JSON
@@ -28,7 +28,7 @@ This endpoint updates an existing mail address for the specified location.
 
 ### HTTP Request
 
-`PATCH https://ohana-api-demo.herokuapp.com/api/locations/:location_id/mail_address/:mail_address_id`
+`PATCH https://ohana-api-211.herokuapp.com/api/locations/:location_id/mail_address/:mail_address_id`
 
 ### JSON Parameters
 

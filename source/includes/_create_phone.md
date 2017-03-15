@@ -10,7 +10,7 @@ Ohanakapa.post('locations/1/phones/', { number: '123-456-7890', extension: '1200
 ```
 
 ```shell
-curl -X POST "https://ohana-api-demo.herokuapp.com/api/locations/1/phones" -d '{"number": "123-456-7890", "extension": "1200", "department": "Referrals", "number_type": "voice", "country_prefix": "+1"}' -H "X-Api-Token: your_token" -H "Content-Type: application/json"
+curl -X POST "https://ohana-api-211.herokuapp.com/api/locations/1/phones" -d '{"number": "123-456-7890", "extension": "1200", "department": "Referrals", "number_type": "voice", "country_prefix": "+1"}' -H "X-Api-Token: your_token" -H "Content-Type: application/json"
 ```
 
 > When successful, the above command returns a `201` HTTP status code and JSON
@@ -32,10 +32,10 @@ This endpoint creates a new phone for the specified entity.
 ### HTTP Request
 
 For locations:
-`POST https://ohana-api-demo.herokuapp.com/api/locations/:location_id/phones`
+`POST https://ohana-api-211.herokuapp.com/api/locations/:location_id/phones`
 
 For contacts:
-`POST https://ohana-api-demo.herokuapp.com/api/locations/:location_id/contacts/:contact_id/phones`
+`POST https://ohana-api-211.herokuapp.com/api/locations/:location_id/contacts/:contact_id/phones`
 
 ### JSON Parameters
 

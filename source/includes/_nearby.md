@@ -5,7 +5,7 @@
 ```ruby
 # Provide an API Endpoint
 Ohanakapa.configure do |c|
-  c.api_endpoint = 'https://ohana-api-demo.herokuapp.com/api'
+  c.api_endpoint = 'https://ohana-api-211.herokuapp.com/api'
 end
 
 # Fetch all locations within 2 miles of ZIP code 94103
@@ -13,7 +13,7 @@ Ohanakapa.get('locations/22/nearby', radius: 2)
 ```
 
 ```shell
-curl "https://ohana-api-demo.herokuapp.com/api/locations/22/nearby?radius=2" -H "User-Agent: MyClient/1.0.0"
+curl "https://ohana-api-211.herokuapp.com/api/locations/22/nearby?radius=2" -H "User-Agent: MyClient/1.0.0"
 ```
 
 > The above command returns a summarized JSON representation containing the following location attributes:
@@ -43,7 +43,7 @@ This endpoint retrieves all locations that are near the specified location.
 
 ### HTTP Request
 
-`GET https://ohana-api-demo.herokuapp.com/api/locations/:location_id/nearby`
+`GET https://ohana-api-211.herokuapp.com/api/locations/:location_id/nearby`
 
 ### URL Query Parameters
 

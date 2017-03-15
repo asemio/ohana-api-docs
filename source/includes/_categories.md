@@ -5,7 +5,7 @@
 ```ruby
 # Provide an API Endpoint
 Ohanakapa.configure do |c|
-  c.api_endpoint = 'https://ohana-api-demo.herokuapp.com/api'
+  c.api_endpoint = 'https://ohana-api-211.herokuapp.com/api'
 end
 
 # Fetch all locations
@@ -13,7 +13,7 @@ Ohanakapa.categories
 ```
 
 ```shell
-curl "https://ohana-api-demo.herokuapp.com/api/categories" -H "User-Agent: MyClient/1.0.0"
+curl "https://ohana-api-211.herokuapp.com/api/categories" -H "User-Agent: MyClient/1.0.0"
 ```
 
 > The above command returns JSON structured like this:
@@ -55,6 +55,6 @@ This endpoint retrieves all categories.
 
 ### HTTP Request
 
-`GET https://ohana-api-demo.herokuapp.com/api/categories`
+`GET https://ohana-api-211.herokuapp.com/api/categories`
 
 The categories are based on the taxonomy used by the instance of the API. By default, the API uses the [Open Eligibility](http://openeligibility.org/) Human Services taxonomy. Categories are organized in a tree structure using the [Ancestry gem](https://github.com/stefankroes/ancestry).

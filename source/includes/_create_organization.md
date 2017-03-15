@@ -6,7 +6,7 @@ Ohanakapa.post('organizations', query: { name: 'New Organization' })
 ```
 
 ```shell
-curl -X POST "https://ohana-api-demo.herokuapp.com/api/organizations -d '{"name":"New Organization","description":"New description"}' -H "X-Api-Token: your_token" -H "Content-Type: application/json"
+curl -X POST "https://ohana-api-211.herokuapp.com/api/organizations -d '{"name":"New Organization","description":"New description"}' -H "X-Api-Token: your_token" -H "Content-Type: application/json"
 ```
 
 > When successful, the above command returns a `201` HTTP status code and JSON
@@ -25,8 +25,8 @@ curl -X POST "https://ohana-api-demo.herokuapp.com/api/organizations -d '{"name"
   "name": "New Organization",
   "slug": "new-organization",
   "website": null,
-  "url": "https://ohana-api-demo.herokuapp.com/api/organizations/new-organization",
-  "locations_url": "https://ohana-api-demo.herokuapp.com/api/organizations/new-organization/locations",
+  "url": "https://ohana-api-211.herokuapp.com/api/organizations/new-organization",
+  "locations_url": "https://ohana-api-211.herokuapp.com/api/organizations/new-organization/locations",
   "contacts": [],
   "phones": []
 }
@@ -36,7 +36,7 @@ This endpoint creates a new organization.
 
 ### HTTP Request
 
-`POST https://ohana-api-demo.herokuapp.com/api/organizations`
+`POST https://ohana-api-211.herokuapp.com/api/organizations`
 
 ### JSON Parameters
 

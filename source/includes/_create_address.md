@@ -8,7 +8,7 @@ Ohanakapa.post('locations/1/address/', { address_1: 'New Street', city: 'Albeque
 ```
 
 ```shell
-curl -X POST "https://ohana-api-demo.herokuapp.com/api/locations/1/address" -d '{"address_1":"New street","city":"Albequerque","state_province":"NM","postal_code":"12345", "country":"US"}' -H "X-Api-Token: your_token" -H "Content-Type: application/json"
+curl -X POST "https://ohana-api-211.herokuapp.com/api/locations/1/address" -d '{"address_1":"New street","city":"Albequerque","state_province":"NM","postal_code":"12345", "country":"US"}' -H "X-Api-Token: your_token" -H "Content-Type: application/json"
 ```
 
 > When successful, the above command returns a `201` HTTP status code and JSON
@@ -29,7 +29,7 @@ This endpoint creates a new address for the specified location.
 
 ### HTTP Request
 
-`POST https://ohana-api-demo.herokuapp.com/api/locations/:location_id/address`
+`POST https://ohana-api-211.herokuapp.com/api/locations/:location_id/address`
 
 ### JSON Parameters
 
