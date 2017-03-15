@@ -1,5 +1,5 @@
 ---
-title: Ohana API Documentation
+title: 211 OK API Documentation
 
 language_tabs:
   - shell
@@ -60,6 +60,6 @@ Welcome to the 211 OK API documentation. The [211 OK API Ruby app](https://ohana
 
 We provide code examples for the Shell and Ruby in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
 
-# Apps Powered by Ohana API
+# Apps Powered by 211 OK API
 
 [211OK Web Search](https://211ok.org) is a Rails application that allows you to search for and display information provided by the API in a user-friendly website.
